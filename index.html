@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <title>電卓</title>
+</head>
+
+<body>
+  <h3>電卓</h3>
+
+  <div class="box">
+    <input id="result" type="text" value="0" disabled>
+    <div class="all-buttons">
+      <div class="buttons">
+        <input type="button" value="7" onclick="setNumber(this)">
+        <input type="button" value="8" onclick="setNumber(this)">
+        <input type="button" value="9" onclick="setNumber(this)">
+        <input type="button" value="+" onclick="setOperator(this)">
+      </div>
+      <div class="buttons">
+        <input type="button" value="4" onclick="setNumber(this)">
+        <input type="button" value="5" onclick="setNumber(this)">
+        <input type="button" value="6" onclick="setNumber(this)">
+        <input type="button" value="-" onclick="setOperator(this)">
+      </div>
+      <div class="buttons">
+        <input type="button" value="1" onclick="setNumber(this)">
+        <input type="button" value="2" onclick="setNumber(this)">
+        <input type="button" value="3" onclick="setNumber(this)">
+        <input type="button" value="*" onclick="setOperator(this)">
+      </div>
+      <div class="buttons">
+        <input type="button" value="0" onclick="setZero(this)">
+        <input type="button" value="00" onclick="setZero(this)">
+        <input type="button" value="." onclick="setDecimal(this)">
+        <input type="button" value="/" onclick="setOperator(this)">
+      </div>
+      <div class="buttons">
+        <input class="wide-btn" type="button" value="AC" onclick="clearScreen()">
+        <input class="wide-btn" type="button" value="=" onclick="calculate()">
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
